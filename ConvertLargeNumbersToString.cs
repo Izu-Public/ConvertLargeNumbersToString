@@ -8,7 +8,7 @@ public static class yourclassname
 	{
 		if( aNumber < 1000 )
 		{
-			// No chanhes 
+			// No changes 
 			return aNumber.ToString();
 		}
 		if( aIsJapanese == false )

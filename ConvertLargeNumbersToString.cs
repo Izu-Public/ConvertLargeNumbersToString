@@ -9,7 +9,9 @@ public static class yourclassname
 		if( aNumber < 1000 )
 		{
 			// No changes 
-			return aNumber.ToString();
+			return aIsEnableDecimals?
+				String.Format( "{0:#.#}", aNumber ):
+				( (int)aNumber ).ToString();
 		}
 		if( aIsJapanese == false )
 		{// English 

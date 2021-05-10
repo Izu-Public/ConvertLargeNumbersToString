@@ -6,6 +6,8 @@ public static class yourclassname
 	//	@param	aIsEnableDecimals	If true, decimals will be appended. 
 	public static string ConvertLargeNumbersToString( bool aIsJapanese, float aNumber, bool aIsEnableDecimals )
 	{
+		if( aNumber == 0 )
+			return "0";
 		if( aNumber < 1000 )
 		{
 			// No changes 
